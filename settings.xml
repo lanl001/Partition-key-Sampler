@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+  <property>
+    <name>jdbc.username</name>
+    <value>root</value>
+  </property>
+  
+  <property>
+    <name>jdbc.password</name>
+    <value></value>
+  </property>
+  
+  <property>
+    <name>jdbc.url</name>
+    <value>jdbc:hive2://hive-server1:10000/default</value>
+  </property>
+  
+  <property>
+    <name>hadoop.core.site.xml</name>
+    <value>/opt/hadoop/hadoop-current/etc/hadoop/core-site.xml</value>
+  </property>
+  
+  <property>
+    <name>hdfs.core.site.xml</name>
+    <value>/opt/hadoop/hadoop-current/etc/hadoop/hdfs-site.xml</value>
+  </property>
+  
+  <property>
+    <name>sample.table.name</name>
+    <value>bi_acquire</value>
+  </property>
+  
+  <property>
+    <name>sample.column.name</name>
+    <value>userid</value>
+  </property>
+  
+  <property>
+    <name>sample.buckets</name>
+    <value>100</value>
+    <description>one out of {sample.buckets} of the total rows will be sampled. 
+    the bigger this figure is, the smaller the sample will be.</description>
+  </property>
+
+  <property>
+    <name>sample.num.rows</name>
+    <value>1000</value>
+  </property>
+
+  <property>
+    <name>sample.path</name>
+    <value>/tmp/sample.lst</value>
+  </property>
+  
+  <property>
+    <name>sample.reducer.number</name>
+    <value>4</value>
+  </property>
+</configuration>
