@@ -12,7 +12,7 @@
   
   <property>
     <name>jdbc.url</name>
-    <value>jdbc:hive2://hive-server1:10000/default</value>
+    <value>jdbc:hive2://172.18.1.180:10000/default</value>
   </property>
   
   <property>
@@ -26,13 +26,13 @@
   </property>
   
   <property>
-    <name>sample.table.name</name>
+    <name>sample.table</name>
     <value>bi_acquire</value>
   </property>
   
   <property>
-    <name>sample.column.name</name>
-    <value>userid</value>
+    <name>sample.columns</name>
+    <value>userid,time</value>
   </property>
   
   <property>
